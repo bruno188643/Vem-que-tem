@@ -1,3 +1,3 @@
-git add .git commit -m "Primeiro commit"git branch -M main
+https://github.com/SEU_USUARIO/SEU_REPOSITORIO.gitgit add .git commit -m "Primeiro commit"git branch -M main
 git push -u origin maingit init Vem-que-tem
 Site de vendas confiável 
