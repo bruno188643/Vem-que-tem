@@ -3,103 +3,84 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vem Que Tem</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
     body {
-      background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
-      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+    }
+    header img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .btn-ofertas {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: #ff0099;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-ofertas:hover {
+      background-color: #d90085;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
       padding: 20px;
     }
-    header {
-      text-align: center;
-      padding: 30px 0;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #007bff;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px 0;
-    }
-    .product {
-      background: #fff;
-      padding: 15px;
+    .produto {
+      background: #f9f9f9;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .product:hover {
-      transform: scale(1.05);
-    }
-    .product img {
-      width: 100%;
+    .produto img {
+      max-width: 100%;
       border-radius: 8px;
     }
-    .product h2 {
-      font-size: 1.2rem;
-      margin: 10px 0;
-    }
-    .product p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .product button {
-      background: #28a745;
+    .rodape {
+      background: #222;
       color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    footer {
       text-align: center;
+      padding: 20px;
       margin-top: 40px;
-      font-size: 0.9rem;
-      color: #999;
+    }
+    .rodape a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Vem Que Tem - Ofertas Imperdíveis!</h1>
+    <img src="https://bruno188643.github.io/Vem-que-tem/ChatGPT%20Image%2017%20de%20abr.%20de%202025%2C%2015_38_27.png" alt="Banner Vem Que Tem" />
   </header>
 
-  <section class="product-grid">
-    <div class="product">
-      <img src="https://via.placeholder.com/250x200" alt="Produto 1" />
-      <h2>Produto Exemplo 1</h2>
-      <p>Descrição rápida do produto. Super promoção!</p>
-      <button>Comprar Agora</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/250x200" alt="Produto 2" />
-      <h2>Produto Exemplo 2</h2>
-      <p>Melhor escolha para você economizar.</p>
-      <button>Comprar Agora</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/250x200" alt="Produto 3" />
-      <h2>Produto Exemplo 3</h2>
-      <p>Top de linha com preço baixo.</p>
-      <button>Comprar Agora</button>
-    </div>
-  </section>
+  <button class="btn-ofertas">🔥 Ver Ofertas do Dia</button>
 
-  <footer>
-    <p>© 2025 Vem Que Tem | Desenvolvido com 💙 por Bruno Mamede</p>
-  </footer>
-</body>
-</html>
+  <section class="produtos">
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Relógio" alt="Relógio">
+      <p><strong>Relógio Smart</strong><br>R$129,90</p>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Fone" alt="Fone">
+      <p><strong>Fone Bluetooth</strong><br>R$89,90</p>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Bolsa" alt="Bolsa">
+      <p><strong>Bolsa Fashion</strong><br>R$149,90</p
