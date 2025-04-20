@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vem Que Tem Ofertas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Vem Que Tem</h1>
+    <nav>
+      <input type="text" id="busca" placeholder="Buscar produto..."/>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Ofertas do Dia</h2>
+    <div class="produto destaque">
+      <img src="https://via.placeholder.com/200x200?text=Promo+Smartwatch" alt="Oferta Especial" />
+      <p>Smartwatch Fit - R$199</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Perfumaria Importada</h2>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x200?text=Harabia+Parfum" alt="Harabia Parfum" />
+      <p>Harabia Parfum 100ml - R$149</p>
+      <a href="#">Ver na Amazon</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x200?text=One+Million" alt="One Million" />
+      <p>Paco Rabanne One Million - R$399</p>
+      <a href="#">Ver no Mercado Livre</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Eletrônicos</h2>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x200?text=Fone+Bluetooth" alt="Fone Bluetooth" />
+      <p>Fone Bluetooth JBL - R$229</p>
+      <a href="#">Ver na Shopee</a>
+    </div>
+    <div class="produto">
+      <img src="https://via.placeholder.com/200x200?text=Echo+Dot" alt="Echo Dot" />
+      <p>Echo Dot Alexa - R$349</p>
+      <a href="#">Ver na Amazon</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Avaliações</h2>
+    <form id="formAvaliacao">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <textarea id="comentario" placeholder="Seu comentário" required></textarea>
+      <label for="nota">Nota:</label>
+      <select id="nota" required>
+        <option value="">Escolha</option>
+        <option value="5">5 - Excelente</option>
+        <option value="4">4 - Muito Bom</option>
+        <option value="3">3 - Bom</option>
+        <option value="2">2 - Ruim</option>
+        <option value="1">1 - Péssimo</option>
+      </select>
+      <button type="submit">Enviar Avaliação</button>
+    </form>
+    <ul id="listaComentarios"></ul>
+  </section>
+
+  <footer>
+    <p>Nos siga nas redes: @vemquetem</p>
+    <p>Contato: contato@vemquetem.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
